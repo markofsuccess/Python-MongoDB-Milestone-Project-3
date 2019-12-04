@@ -22,6 +22,10 @@ def contact():
 def services():
     return render_template("services.html")
     
+@app.route('/item1_review')
+def item1_review():
+    return render_template("item1_review.html")
+    
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
