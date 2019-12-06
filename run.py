@@ -5,6 +5,11 @@ from bson.objectid import ObjectId
 
 app = Flask(__name__)
 
+app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
+app.config['MONGO_DBNAME'] = os.getenv('MONGO_DBNAME')
+app.config['MONGO_URI'] = os.getenv('MONGO_URI')
+
+mongo = PyMongo(app)
 
 @app.route('/')
 def index():
