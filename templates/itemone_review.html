@@ -1,37 +1,41 @@
 {% extends 'base.html' %} {% block content %}
+<div>
+    <h2 class="text-center"><a href="https://www.mediamarkt.se/sv/product/_apple-iphone-11-64gb-black-1309657.html" target="_blank">APPLE IPHONE 11 - 128GB - BLACK</a></h2>
+</div>
+  <img class="d-block img-fluid" src="static/images/Iphone 11.png" alt="Iphone 11">
+</div>
 
-    <div>
-      <h2 class="text-center"><a href="https://www.mediamarkt.se/sv/product/_apple-iphone-11-64gb-black-1309657.html" target="_blank">APPLE IPHONE 11 - 128GB - BLACK</a></h2>
-    </div>
-      <img class="d-block img-fluid" src="static/images/Iphone 11.png" alt="Iphone 11">
-    </div>
-</div>
-</div>
 <div class="row">
-    <form  action="" method="POST" class="col s12">
+    <form action="" method="POST" class="col s6">
         <div class="row">
             <div class="input-field col s6">
                 <i class=""></i>
-                <input id="" type="text" class="validate">
+                <input id="mobile_name" name="mobile_name" type="text" class="validate">
                 <label for="">Mobile Phone</label>
             </div>
+        </div>
+        <div class="row">
             <div class="input-field col s6">
                 <i class=""></i>
-                <input id="" type="" class="validate">
+                <input id="mobile_price" name="mobile_price" type="textarea" class="validate">
                 <label for="">Purchase Price</label>
             </div>
         </div>
-        <div class="input-field col s6">
-                <i class=""></i>
-                <input id="" type="text" class="validate">
-                <label for="">Purchase Date</label>
-            </div>
+        <div class="row">
             <div class="input-field col s6">
                 <i class=""></i>
-                <input id="" type="" class="validate">
+                <input id="purchase_date" name="purchase_date" type="textarea" class="datepicker">
+                <label for="">Purchase Date</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+                <i class=""></i>
+                <textarea id="mobile_review" name="mobile_review" type="textarea" class="validate"></textarea>
                 <label for="">Review</label>
             </div>
         </div>
+        <button type="submit" name="action" class="btn btn-primary">Submit</button>
     </form>
 </div>
 {% endblock %}
