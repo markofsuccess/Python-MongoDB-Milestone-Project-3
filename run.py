@@ -31,15 +31,14 @@ def services():
 
 @app.route('/itemone_review', methods=['POST'])
 def itemone_review():
-    return render_template("itemone_review.html",
-    specifications=mongo.db.specifications.find())
+    return render_template("itemone_review.html")
 
 @app.route('/insert_text', methods=['POST'])
 def insert_text():
     specifications = mongo.db.specifications
     specifications.insert_one(request.form.to_dict())
-    return redirect(url_for('itemone_review'))
-
+    return render_template("itemone_review.html",
+    insert_text=mongo.db.specifications.find())
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
