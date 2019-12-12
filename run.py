@@ -39,7 +39,7 @@ def insert_text():
         specifications = mongo.db.specifications
         specifications.insert_one(request.form.to_dict())
     return render_template("itemone_review.html",
-    banana=mongo.db.specifications.find())
+    review=mongo.db.specifications.find())
     
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
