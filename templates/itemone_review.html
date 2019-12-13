@@ -9,18 +9,18 @@
 
 
 {% for r in review %}
-<h1>Reviews</h1>
+<h1 class="text-center">Reviews</h1>
  <div class="col-sm-12 ">
-                <p><b>Name</b>: {{r.mobile_name}}</p>
+                <p class="text-center"><b>Name</b>: {{r.mobile_name}}</p>
             </div>
             <div class="col-sm-12 ">
-                <p><b>Price</b>: {{r.mobile_price}}</p>
+                <p class="text-center"><b>Price</b>: {{r.mobile_price}}</p>
             </div>
             <div class="col-sm-12">
-                <p><b>Purchase date</b>: {{r.purchase_date}}</p>
+                <p class="text-center"><b>Purchase date</b>: {{r.purchase_date}}</p>
             </div>
             <div class="col-sm-12">
-                <p><b>Review</b>: {{r.mobile_edit}}</p>
+                <p class="text-center"><b>Review</b>: {{r.mobile_edit}}</p>
             </div>
 {% endfor %}
 
