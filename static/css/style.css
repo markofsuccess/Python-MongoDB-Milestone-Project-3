@@ -23,4 +23,10 @@
         .stars::after{
             content: counter(rateme) '/5';
         }
-
+        
+.row {
+    width: 100%;
+}
+.datepicker {
+    width: 100%;
+}

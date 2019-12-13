@@ -1,5 +1,6 @@
 {% extends 'base.html' %} 
 {% block content %}
+
 <div>
     <h2 class="text-center"><a href="https://www.mediamarkt.se/sv/product/_apple-iphone-11-64gb-black-1309657.html" target="_blank">APPLE IPHONE 11 - 128GB - BLACK</a></h2>
 </div>
@@ -9,7 +10,7 @@
 
 
 {% for r in review %}
-<h1 class="text-center">Reviews</h1>
+<h1 class="text-center">Latest Review</h1>
  <div class="col-sm-12 ">
                 <p class="text-center"><b>Name</b>: {{r.mobile_name}}</p>
             </div>
@@ -27,29 +28,29 @@
 <div class="row">
     <form action="{{ url_for('insert_text') }}" method="POST" class="col s6">
         <div class="row">
-            <div class="input-field col s6">
-                <i class="fa fa-mobile fa-3x" aria-hidden="true"></i>
+            <div class="input-field col s6 text-center">
+                <i class="fa fa-mobile fa-3x"></i>
                 <input id="mobile_name" name="mobile_name" type="text" class="validate"/>
                 <label for="">Mobile Phone</label>
             </div>
         </div>
         <div class="row">
-            <div class="input-field col s6">
+            <div class="input-field col s6 text-center">
                 <i class="fa fa-dollar fa-3x"></i>
-                <input id="mobile_price" name="mobile_price" type="textarea" class="validate"/>
+                <input id="mobile_price" name="mobile_price" type="text" class="validate"/>
                 <label for="">Purchase Price</label>
             </div>
         </div>
         <div class="row">
-            <div class="input-field col s6">
+            <div class="input-field col s6 text-center">
                 <i class="fa fa-calendar fa-3x"></i>
-                <input id="purchase_date" name="purchase_date" type="textarea" class="datepicker"/>
+                <input id="purchase_date" name="purchase_date" type="text" class="validate"/>
                 <label for="">Purchase Date</label>
             </div>
         </div>
         
         <div class="row">
-            <div class="input-field col s6">
+            <div class="input-field col s6 text-center">
                 <i class="fa fa-comments fa-3x"></i>
                 <textarea id="mobile_edit" name="mobile_edit" type="textarea" class="validate"></textarea>
                 <label for="">Review</label>
