@@ -4,9 +4,11 @@ from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 
 app = Flask(__name__)
+
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 app.config['MONGO_DBNAME'] = os.getenv('MONGO_DBNAME')
 app.config['MONGO_URI'] = os.getenv('MONGO_URI')
+
 mongo = PyMongo(app)
 
 @app.route('/')
@@ -37,6 +39,20 @@ def insert_text():
         specifications = mongo.db.specifications
         specifications.insert_one(request.form.to_dict())
     return redirect(url_for('itemone_review',))
+    
+@app.route('/itemtwo_review',methods=['GET','POST'])
+def itemtwo_review():
+    samsung=mongo.db.samsung.find()
+    return render_template("itemtwo_review.html", samsung=samsung)
+
+@app.route('/insert_samsung', methods=['GET','POST'])
+def insert_samsung():
+    if request.method == 'POST':
+        samsung = mongo.db.samsung
+        samsung.insert_one(request.form.to_dict())
+    return redirect(url_for('itemtwo_review',))
+    
+    
     
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
