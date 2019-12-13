@@ -7,14 +7,21 @@
   <img class="d-block img-fluid" src="static/images/Iphone 11.png" alt="Iphone 11">
 </div>
 
-<!--{% if review %}
-    {% for item in review %}
-		
-		{{ item }}
-	{% endfor %}
-{% endif %}	
--->
 
+{% for r in review %}
+ <div class="col-sm-12 ">
+                <p><b>Name</b>: {{r.mobile_name}}</p>
+            </div>
+            <div class="col-sm-12 ">
+                <p><b>Price</b>: {{r.mobile_price}}</p>
+            </div>
+            <div class="col-sm-12">
+                <p><b>Purchase date</b>: {{r.purchase_date}}</p>
+            </div>
+            <div class="col-sm-12">
+                <p><b>Review</b>: {{r.mobile_edit}}</p>
+            </div>
+{% endfor %}
 
 <div class="row">
     <form action="{{ url_for('insert_text') }}" method="POST" class="col s6">
