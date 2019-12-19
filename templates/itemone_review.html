@@ -14,36 +14,44 @@
         <div class="form-row">
             <div class="input-field col s6">
                 <i class="fa fa-mobile fa-3x"></i>
-                <label for="mobile_name">Mobile Phone:</label>
+                <label for="mobile_name"><b>Mobile Phone:</b></label>
                 <input id="mobile_name" name="mobile_name" placeholder="iPhone 11" type="text" class="form-control"/>
             </div>
         </div>
         <div class="form-row">
             <div class="input-field col s6">
                 <i class="fa fa-dollar fa-3x"></i>
-                <label for="mobile_price">Purchase Price:</label>
+                <label for="mobile_price"><b>Purchase Price:</b></label>
                 <input id="mobile_price" name="mobile_price" placeholder="Your Price" type="text" class="form-control"/>
             </div>
         </div>
         <div class="form-row">
             <div class="input-field col s6">
                 <i class="fa fa-calendar fa-3x"></i>
-                <label for="purchase_date">Puchase Date:</label>
+                <label for="purchase_date"><b>Puchase Date:</b></label>
                 <input id="purchase_date" name="purchase_date" type="text" placeholder="Your Puchase Date" class="form-control"/>
             </div>
         </div>
         <div class="form-row">
             <div class="input-field col s6">
+                <i class="fa fa-user fa-3x"></i>
+                <label for="author"><b>Author:</b></label>
+                <input id="author" name="author" type="text" placeholder="Your Name" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="input-field col s6">
                 <i class="fa fa-comments fa-3x"></i>
-                <label for="mobile_edit">Review:</label>
+                <label for="mobile_edit"><b>Review:</b></label>
                 <textarea id="mobile_edit" name="mobile_edit" placeholder="Please leave a review" type="textarea" class="form-control"></textarea>
             </div>
         </div>
         <button type="submit" name="action" class="btn btn-primary">Submit</button>
 	</form>
 </div>
+<h1 class="text-center">Latest Reviews</h1>
+
 {% for r in review %}
-<h1 class="text-center">Latest Review</h1>
  <div class="col-sm-12 ">
                 <p class="text-center"><b>Name</b>: {{r.mobile_name}}</p>
             </div>
@@ -52,6 +60,9 @@
             </div>
             <div class="col-sm-12">
                 <p class="text-center"><b>Purchase date</b>: {{r.purchase_date}}</p>
+            </div>
+            <div class="col-sm-12">
+                <p class="text-center"><b>Author</b>: {{r.author}}</p>
             </div>
             <div class="col-sm-12">
                 <p class="text-center"><b>Review</b>: {{r.mobile_edit}}</p>
