@@ -8,7 +8,40 @@
   <img class="d-block img-fluid" src="static/images/Iphone 11.png" alt="Iphone 11">
 </div>
 
-
+<h3 class="text-center">Please Leave Your Review For iPhone 11 Here</h3>
+<div class="container" >
+    <form action="{{ url_for('insert_text') }}" method="POST" class="col s6">
+        <div class="form-row">
+            <div class="input-field col s6">
+                <i class="fa fa-mobile fa-3x"></i>
+                <label for="mobile_name">Mobile Phone:</label>
+                <input id="mobile_name" name="mobile_name" placeholder="iPhone 11" type="text" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="input-field col s6">
+                <i class="fa fa-dollar fa-3x"></i>
+                <label for="mobile_price">Purchase Price:</label>
+                <input id="mobile_price" name="mobile_price" placeholder="Your Price" type="text" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="input-field col s6">
+                <i class="fa fa-calendar fa-3x"></i>
+                <label for="purchase_date">Puchase Date:</label>
+                <input id="purchase_date" name="purchase_date" type="text" placeholder="Your Puchase Date" class="form-control"/>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="input-field col s6">
+                <i class="fa fa-comments fa-3x"></i>
+                <label for="mobile_edit">Review:</label>
+                <textarea id="mobile_edit" name="mobile_edit" placeholder="Please leave a review" type="textarea" class="form-control"></textarea>
+            </div>
+        </div>
+        <button type="submit" name="action" class="btn btn-primary">Submit</button>
+	</form>
+</div>
 {% for r in review %}
 <h1 class="text-center">Latest Review</h1>
  <div class="col-sm-12 ">
@@ -24,41 +57,5 @@
                 <p class="text-center"><b>Review</b>: {{r.mobile_edit}}</p>
             </div>
 {% endfor %}
-
-<div class="row">
-    <form action="{{ url_for('insert_text') }}" method="POST" class="col s6">
-        <div class="row">
-            <div class="input-field col s6 text-center">
-                <i class="fa fa-mobile fa-3x"></i>
-                <input id="mobile_name" name="mobile_name" type="text" class="validate"/>
-                <label for="">Mobile Phone</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s6 text-center">
-                <i class="fa fa-dollar fa-3x"></i>
-                <input id="mobile_price" name="mobile_price" type="text" class="validate"/>
-                <label for="">Purchase Price</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s6 text-center">
-                <i class="fa fa-calendar fa-3x"></i>
-                <input id="purchase_date" name="purchase_date" type="text" class="validate"/>
-                <label for="">Purchase Date</label>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="input-field col s6 text-center">
-                <i class="fa fa-comments fa-3x"></i>
-                <textarea id="mobile_edit" name="mobile_edit" type="textarea" class="validate"></textarea>
-                <label for="">Review</label>
-            </div>
-        </div>
-        <button type="submit" name="action" class="btn btn-primary">Submit</button>
-	</form>
-</div>
-
   
 {% endblock %}
