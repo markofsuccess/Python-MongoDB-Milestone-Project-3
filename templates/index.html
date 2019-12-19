@@ -61,7 +61,7 @@
                 </form>
                 <p class="card-text text-center">Read other users reviews of iPhone 11 or leave your own!</p>
               </div>
-              <div class="card-footer">
+              <div class="card-footer text-center">
                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
               </div>
             </div>
@@ -79,7 +79,7 @@
                 <button type="submit" class="btn btn-primary btn-block">Leave Review / View Review</button>
                 <p class="card-text text-center">Read other users reviews of Samsung s10 or leave your own!</p>
               </div>
-              <div class="card-footer">
+              <div class="card-footer text-center">
                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
               </div>
             </div>
@@ -97,7 +97,7 @@
                 <button type="submit" class="btn btn-primary btn-block">Leave Review / View Review</button>
                 <p class="card-text text-center">Read other users reviews of Huawei p30 or leave your own!</p>
               </div>
-              <div class="card-footer">
+              <div class="card-footer text-center">
                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
               </div>
             </div>
@@ -105,15 +105,18 @@
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+              <a href="#"><img class="card-img-top" src="static/images/google_pixel4.png" alt="Google Pixel 4"></a>
               <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Item Four</a>
+                <h4 class="card-title text-center">
+                  <a href="https://www.amazon.com/Google-Pixel-Just-Black-Unlocked/dp/B07YMNLXL3/ref=sr_1_3?keywords=google+pixel+4&qid=1576788297&sr=8-3" target="_blank">Google Pixel 4</a>
                 </h4>
-                <h5>$24.99</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                <h5 class="text-center">$699</h5>
+                 <form method="POST" action="{{ url_for('itemone_review') }}">
+                <button type="submit" class="btn btn-primary btn-block">Leave Review / View Review</button>
+                </form>
+                <p class="card-text text-center">Read other users reviews of Google Pixel 4 or leave your own!</p>
               </div>
-              <div class="card-footer">
+              <div class="card-footer text-center">
                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
               </div>
             </div>
@@ -121,15 +124,17 @@
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+              <a href="#"><img class="card-img-top" src="static/images/iphone_xr.png" alt="iPhone XR"></a>
               <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Item Five</a>
+                <h4 class="card-title text-center">
+                  <a href="https://www.amazon.com/Apple-iPhone-XR-Fully-Unlocked/dp/B07P6Y7954/ref=sr_1_5?keywords=APPLE+iPhone+8&qid=1576789272&sr=8-5" target="_blank">iPhone XR</a>
                 </h4>
-                <h5>$24.99</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
+                <h5 class="text-center">$503</h5>
+                <form method="POST" action="{{ url_for('itemtwo_review') }}">
+                <button type="submit" class="btn btn-primary btn-block">Leave Review / View Review</button>
+                <p class="card-text text-center">Read other users reviews of iPhone XR or leave your own!</p>
               </div>
-              <div class="card-footer">
+              <div class="card-footer text-center">
                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
               </div>
             </div>
@@ -137,15 +142,17 @@
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+              <a href="#"><img class="card-img-top" src="static/images/NOKIA-7.png" alt="Nokia 7.2"></a>
               <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Item Six</a>
+                <h4 class="card-title text-center">
+                  <a href="https://www.amazon.com/Nokia-7-2-Unlocked-Smartphone-T-Mobile/dp/B07XVZXR5Y/ref=sr_1_1_sspa?crid=CKNZLAVVZBX4&keywords=nokia+7.2&qid=1576790035&sprefix=nokia%2Caps%2C286&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFERkpFSTdCTUZXMDAmZW5jcnlwdGVkSWQ9QTA0OTMwODIxMktNWDM5QjZRMzRaJmVuY3J5cHRlZEFkSWQ9QTA5MDA3MDIxUUIzTjQ1NkhFRk1KJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==" target="_blank">Nokia 7.2</a>
                 </h4>
-                <h5>$24.99</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
+                <h5 class="text-center">$329</h5>
+                <form method="POST" action="{{ url_for('itemthree_review') }}">
+                <button type="submit" class="btn btn-primary btn-block">Leave Review / View Review</button>
+                <p class="card-text text-center">Read other users reviews of Nokia 7.2 or leave your own!</p>
               </div>
-              <div class="card-footer">
+              <div class="card-footer text-center">
                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
               </div>
             </div>
