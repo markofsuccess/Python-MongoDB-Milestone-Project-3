@@ -52,6 +52,18 @@ def insert_samsung():
         samsung.insert_one(request.form.to_dict())
     return redirect(url_for('itemtwo_review',))
     
+@app.route('/itemthree_review',methods=['GET','POST'])
+def itemthree_review():
+    huawei=mongo.db.huawei.find()
+    return render_template("itemthree_review.html", huawei=huawei)
+    
+@app.route('/insert_huawei', methods=['GET','POST'])
+def insert_huawei():
+    if request.method == 'POST':
+        huawei = mongo.db.huawei
+        huawei.insert_one(request.form.to_dict())
+    return redirect(url_for('itemthree_review',))
+    
     
     
 if __name__ == '__main__':
