@@ -15,19 +15,6 @@ mongo = PyMongo(app)
 def index():
     return render_template("index.html")
 
-@app.route('/about')
-def about():
-    return render_template("about.html")
-
-@app.route('/contact')
-def contact():
-    return render_template("contact.html")
-    
-@app.route('/services')
-def services():
-    return render_template("services.html")
-
-
 @app.route('/itemone_review',methods=['GET','POST'])
 def itemone_review():
     review=mongo.db.specifications.find()
@@ -63,8 +50,6 @@ def insert_huawei():
         huawei = mongo.db.huawei
         huawei.insert_one(request.form.to_dict())
     return redirect(url_for('itemthree_review',))
-    
-    
     
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
