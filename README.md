@@ -91,7 +91,7 @@ The technologies used in this project were:
 
 ## Broswers
 
-* The website was tested on the Google Chrome browser, Safari, Firefox Quantum and Brave broswer to make sure that everything loaded smoothly and looked proper across different browsers. Test were succesful on all browsers, on Brave browser however the markers on the map dont show for some reason.
+* The website was tested on the Google Chrome browser, Safari, Firefox Quantum and Brave broswer to make sure that everything loaded smoothly and looked proper across different browsers. Test were succesful on all browsers.
 * Google Chrome Version 76.0.3809.132
 * Brave Version 0.61.52 Chromium: 73.0.3683.86
 * Safari Version 12.1.2 (14607.3.9)
@@ -102,7 +102,7 @@ The technologies used in this project were:
 ## Responsivness
 
 * The site was tested on multiple devices using Google chrome developer tools to see the responsivness for different media devices. The devices that were tested were: Samsung S5, Pixel 2, Pixel 2 XL, iPhone X, iPhone 5/6/7/8, iPhone 6/7/8 Plus, iPad and iPad Pro.
-* [Responsive Design Checker](https://responsivedesignchecker.com/) was used to test responsiveness as well.
+* [Responsive Design Checker](https://responsivedesignchecker.com/) was used to test responsiveness on multiple devices. All test were succesful.
 
 ## Links & Review buttons
 
@@ -113,6 +113,9 @@ The technologies used in this project were:
 
 * Checked that all entries that users leave were showing in my MongoDB Atlas collection database.
 
+## Bugs
+
+* Only bug were with github when pushing the code to Github, I had set the global user name with quotes so first commits show "markofsuccess" instead of markofsuccess.
 
 # Deployment
 
