@@ -75,6 +75,17 @@ def insert_iphone():
         iphone.insert_one(request.form.to_dict())
     return redirect(url_for('itemfive_review',))
 
+@app.route('/itemsix_review',methods=['GET','POST'])
+def itemsix_review():
+    nokia=mongo.db.nokia.find()
+    return render_template("itemsix_review.html", nokia=nokia)
+
+@app.route('/insert_nokia', methods=['GET','POST'])
+def insert_nokia():
+    if request.method == 'POST':
+        nokia = mongo.db.nokia
+        nokia.insert_one(request.form.to_dict())
+    return redirect(url_for('itemsix_review',))    
     
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
