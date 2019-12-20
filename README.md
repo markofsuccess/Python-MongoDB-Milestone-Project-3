@@ -128,12 +128,11 @@ The technologies used in this project were:
 4. Installed required instalments with command: sudo pip3 install -r requirements.txt
 5. Crate Procfile in Command terminal: echo web: python run.py > Procfile 
 6. Create free [MongoDB account](https://www.mongodb.com/) - Create Cluster - and Collection.
-7. Copy Your MongoDB atlas cluster.
+7. Copy Your MongoDB connection atlas cluster.
 7. Edit .bashrc file to hide MONGO URI secrtey key and values by:
     * In command terminal: cd .. (because .bashrc is in home directory)
     * In command terminal: nano .bashrc
-    * In command terminal: export MONGO_URI="<”mongodb atlas mongodb+srv://<YOUR USER NAME>:<password>@<YOUR CLUSTER>-w59pp.mongodb.net/<YOUR COLLECTION>?retryWrites=true&w=majority”>"
-    * Then use control x, y, enter to save settings.
+    * In command terminal: export MONGO_URI="Your MONGO URI That You Copied Earlier"
     * Close terminal and reopen for change to take effect.
     * echo $MONGO_UR to see if your connection string is printed back.
 8. Set up MONGO_URI app config in run.py.
@@ -154,7 +153,7 @@ The technologies used in this project were:
 
 ## Acknowledgements
 
-* Thanks to the amazing tutor on Code Institute for supporting me through the project.
+* Thanks to the amazing tutors on Code Institute for supporting me through the project.
 * Thanks to my Mentor Anonija Simic for the support through the project.
 
 ## Media
