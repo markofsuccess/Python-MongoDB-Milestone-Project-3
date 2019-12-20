@@ -71,7 +71,7 @@ The technologies used in this project were:
   * Python was used to render the different html templates and to present data entrties.
 
 * [MongoDB](https://www.mongodb.com/cloud/atlas)
-  *MongoDB was used for creating databases for users leaving reviews.
+  * MongoDB was used for creating databases for users leaving reviews.
 
 * [Start Bootstrap](https://startbootstrap.com/templates/shop-homepage/)
   * The theme for the website.
@@ -134,6 +134,7 @@ The technologies used in this project were:
     * In command terminal: nano .bashrc
     * In command terminal: export MONGO_URI="Your MONGO URI That You Copied Earlier"
     * Close terminal and reopen for change to take effect.
+    * Then control x, y and enter to save. Control + command x, y, and enter on Mac
     * echo $MONGO_UR to see if your connection string is printed back.
 8. Set up MONGO_URI app config in run.py.
 9. In command terminal: git push origin master  - in order to push it to the Github resporitory.
