@@ -62,7 +62,18 @@ def insert_google():
         google = mongo.db.google
         google.insert_one(request.form.to_dict())
     return redirect(url_for('itemfour_review',))
+    
+@app.route('/itemfive_review',methods=['GET','POST'])
+def itemfive_review():
+    iphone=mongo.db.iphone.find()
+    return render_template("itemfive_review.html", iphone=iphone)
 
+@app.route('/insert_iphone', methods=['GET','POST'])
+def insert_iphone():
+    if request.method == 'POST':
+        iphone = mongo.db.iphone
+        iphone.insert_one(request.form.to_dict())
+    return redirect(url_for('itemfive_review',))
 
     
 if __name__ == '__main__':
