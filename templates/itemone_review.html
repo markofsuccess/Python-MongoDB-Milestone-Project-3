@@ -1,72 +1,71 @@
-{% extends 'base.html' %} 
-{% block content %}
-
+{% extends 'base.html' %} {% block content %}
+<!-- iPhone 11 Content -->
 <div>
     <h2 class="text-center"><a href="https://www.amazon.com/Apple-iPhone-11-256GB-Unlocked/dp/B07ZPL6Y2D/ref=sr_1_1?keywords=iphone+11&qid=1576785760&sr=8-1" target="_blank">APPLE IPHONE 11 - 128GB - BLACK</a></h2>
 </div>
 <div>
-  <img class="d-block img-fluid" src="static/images/Iphone 11.png" alt="Iphone 11">
+    <img class="d-block img-fluid" src="static/images/Iphone 11.png" alt="iPhone 11">
 </div>
-
+<!-- Review Form -->
 <h3 class="text-center">Please Leave Your Review For iPhone 11 Here</h3>
-<div class="container" >
+<div class="container">
     <form action="{{ url_for('insert_text') }}" method="POST" class="col s6">
         <div class="form-row">
             <div class="input col s6">
                 <i class="fa fa-mobile fa-3x"></i>
                 <label for="mobile_name"><b>Mobile Phone:</b></label>
-                <input id="mobile_name" name="mobile_name" placeholder="iPhone 11" type="text" class="form-control"/>
+                <input id="mobile_name" name="mobile_name" placeholder="iPhone 11" type="text" class="form-control" />
             </div>
         </div>
         <div class="form-row">
             <div class="input col s6">
                 <i class="fa fa-dollar fa-3x"></i>
                 <label for="mobile_price"><b>Purchase Price:</b></label>
-                <input id="mobile_price" name="mobile_price" placeholder="Your Price" type="text" class="form-control"/>
+                <input id="mobile_price" name="mobile_price" placeholder="Your Price" type="text" class="form-control" />
             </div>
         </div>
         <div class="form-row">
             <div class="input col s6">
                 <i class="fa fa-calendar fa-3x"></i>
                 <label for="purchase_date"><b>Puchase Date:</b></label>
-                <input id="purchase_date" name="purchase_date" type="text" placeholder="Your Puchase Date" class="form-control"/>
+                <input id="purchase_date" name="purchase_date" type="text" placeholder="Your Puchase Date" class="form-control" />
             </div>
         </div>
         <div class="form-row">
             <div class="input col s6">
                 <i class="fa fa-user fa-3x"></i>
                 <label for="author"><b>Author:</b></label>
-                <input id="author" name="author" type="text" placeholder="Your Name" class="form-control"/>
+                <input id="author" name="author" type="text" placeholder="Your Name" class="form-control" />
             </div>
         </div>
         <div class="form-row">
             <div class="input col s6">
                 <i class="fa fa-comments fa-3x"></i>
                 <label for="mobile_edit"><b>Review:</b></label>
-                <textarea id="mobile_edit" name="mobile_edit" placeholder="Please leave a review" type="textarea"  class="form-control"></textarea>
+                <textarea id="mobile_edit" name="mobile_edit" placeholder="Please leave a review" class="form-control"></textarea>
             </div>
         </div>
         <button type="submit" name="action" class="btn btn-primary btn-block">Submit</button>
-	</form>
+    </form>
 </div>
-<h1 class="text-center">Latest Reviews</h1>
+<!-- Review Entries -->
+
+<h1 class="text-center">Latest Reviews</h1> 
 
 {% for r in review %}
- <div class="col-sm-12 ">
-                <p class="text-center"><b>Name</b>: {{r.mobile_name}}</p>
-            </div>
-            <div class="col-sm-12 ">
-                <p class="text-center"><b>Price</b>: {{r.mobile_price}}</p>
-            </div>
-            <div class="col-sm-12">
-                <p class="text-center"><b>Purchase date</b>: {{r.purchase_date}}</p>
-            </div>
-            <div class="col-sm-12">
-                <p class="text-center"><b>Author</b>: {{r.author}}</p>
-            </div>
-            <div class="col-sm-12">
-                <p class="text-center"><b>Review</b>: {{r.mobile_edit}}</p>
-            </div>
-{% endfor %}
-  
-{% endblock %}
+<div class="col-sm-12 ">
+    <p class="text-center"><b>Name</b>: {{r.mobile_name}}</p>
+</div>
+<div class="col-sm-12 ">
+    <p class="text-center"><b>Price</b>: {{r.mobile_price}}</p>
+</div>
+<div class="col-sm-12">
+    <p class="text-center"><b>Purchase date</b>: {{r.purchase_date}}</p>
+</div>
+<div class="col-sm-12">
+    <p class="text-center"><b>Author</b>: {{r.author}}</p>
+</div>
+<div class="col-sm-12">
+    <p class="text-center"><b>Review</b>: {{r.mobile_edit}}</p>
+</div>
+{% endfor %} {% endblock %}

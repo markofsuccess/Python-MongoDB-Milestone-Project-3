@@ -1,192 +1,187 @@
 {% extends 'base.html' %} {% block content %}
-  
-  <div class="container">
+
+<div class="container">
     <div class="row">
-      <div class="col-lg-3">
-        <h1 class="my-4">Digital Review Site</h1>
-        <div class="list-group">
-          <a href="#" class="list-group-item">Smart Phones</a>
-          <a href="#" class="list-group-item">iPad & Tablets Coming Soon!</a>
-          <a href="#" class="list-group-item">MacBooks & Laptops Coming Soon!</a>
+        <div class="col-lg-3">
+            <h1 class="my-4">Digital Review Site</h1>
+            <div class="list-group">
+                <a href="#" class="list-group-item">Smart Phones</a>
+                <a href="#" class="list-group-item">iPad & Tablets Coming Soon!</a>
+                <a href="#" class="list-group-item">MacBooks & Laptops Coming Soon!</a>
+            </div>
         </div>
-      </div>
-      
-      <!-- /.col-lg-3 -->
+        <!-- Carousel Picture Slider -->
 
-      <div class="col-lg-9">
-        <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-          </ol>
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-              <div>
-                <h2 class="text-center"><a href="https://www.amazon.com/Apple-iPhone-11-256GB-Unlocked/dp/B07ZPL6Y2D/ref=sr_1_1?keywords=iphone+11&qid=1576785760&sr=8-1" target="_blank">Apple iPhone 11 - 128GB - Black</a></h2>
-              </div>
-              <img class="d-block img-fluid" src="static/images/Iphone 11.png" alt="Iphone 11">
+        <div class="col-lg-9">
+            <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div>
+                        <h2 class="text-center"><a href="https://www.amazon.com/Apple-iPhone-11-256GB-Unlocked/dp/B07ZPL6Y2D/ref=sr_1_1?keywords=iphone+11&qid=1576785760&sr=8-1" target="_blank">Apple iPhone 11 - 128GB - Black</a></h2>
+                        </div>
+                        <img class="d-block img-fluid" src="static/images/Iphone 11.png" alt="Iphone 11">
+                    </div>
+                    <div class="carousel-item">
+                        <h2 class="text-center"><a href="https://www.amazon.com/Samsung-SM-G975F-Unlocked-Smartphone-International/dp/B07NZX5BKH/ref=sr_1_5?keywords=samsung+s10&qid=1576785407&sr=8-5" target="_blank">Samsung Galaxy S10 - 128 GB - 8 GB RAM - Prism Black</a></h2>
+                        <img class="d-block img-fluid" src="static/images/Samsung-s10.png" alt="Samsung Galaxy s10">
+                    </div>
+                    <div class="carousel-item">
+                        <h2 class="text-center"><a href="https://www.amazon.com/ELE-L29-Factory-Unlocked-Smartphone-International/dp/B07Q2X19LG/ref=sr_1_2?keywords=huawei+p30&qid=1576785958&sr=8-2" target="_blank">Huawei P30 - 128GB - Breathing Crystal</a></h2>
+                        <img class="d-block img-fluid" src="static/images/Huawei-p30.png" alt="Huawei p30">
+                    </div>
+                    <div class="carousel-item">
+                        <h2 class="text-center"><a href="https://www.amazon.com/Google-Pixel-Just-Black-Unlocked/dp/B07YMNLXL3/ref=sr_1_3?keywords=google+pixel+4&qid=1576788297&sr=8-3" target="_blank">Google Pixel 4 - 64 GB</a></h2>
+                        <img class="d-block img-fluid" src="static/images/google_pixel4.png" alt="Google Pixel 4">
+                    </div>
+                    <div class="carousel-item">
+                        <h2 class="text-center"><a href="https://www.amazon.com/Apple-iPhone-XR-Fully-Unlocked/dp/B07P6Y7954/ref=sr_1_5?keywords=APPLE+iPhone+8&qid=1576789272&sr=8-5" target="_blank">Apple iPhone XR - 64 GB</a></h2>
+                        <img class="d-block img-fluid" src="static/images/iphone_xr.png" alt="iPhone XR">
+                    </div>
+                    <div class="carousel-item">
+                        <h2 class="text-center"><a href="https://www.amazon.com/Nokia-7-2-Unlocked-Smartphone-T-Mobile/dp/B07XVZXR5Y/ref=sr_1_1_sspa?crid=CKNZLAVVZBX4&keywords=nokia+7.2&qid=1576790035&sprefix=nokia%2Caps%2C286&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFERkpFSTdCTUZXMDAmZW5jcnlwdGVkSWQ9QTA0OTMwODIxMktNWDM5QjZRMzRaJmVuY3J5cHRlZEFkSWQ9QTA5MDA3MDIxUUIzTjQ1NkhFRk1KJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==" target="_blank">Nokia 7.2 - 128 GB</a></h2>
+                        <img class="d-block img-fluid" src="static/images/NOKIA-7.png" alt="Nokia 7.2">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-            <div class="carousel-item">
-              <h2 class="text-center"><a href="https://www.amazon.com/Samsung-SM-G975F-Unlocked-Smartphone-International/dp/B07NZX5BKH/ref=sr_1_5?keywords=samsung+s10&qid=1576785407&sr=8-5" target="_blank">Samsung Galaxy S10 - 128 GB - 8 GB RAM - Prism Black</a></h2>
-              <img class="d-block img-fluid" src="static/images/Samsung-s10.png" alt="Samsung Galaxy s10">
+            <!-- itemone_review -->
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                          <a href="#"><img class="card-img-top" src="static/images/Iphone 11.png" alt="iPhone 11"></a>
+                        <div class="card-body">
+                            <h4 class="card-title text-center">
+                          <a href="https://www.amazon.com/Apple-iPhone-11-256GB-Unlocked/dp/B07ZPL6Y2D/ref=sr_1_1?keywords=iphone+11&qid=1576785760&sr=8-1" target="_blank">iPhone 11</a>
+                            </h4>
+                            <h5 class="text-center">$809</h5>
+                            <form method="POST" action="{{ url_for('itemone_review') }}">
+                                <button type="submit" class="btn btn-primary btn-block">Leave Review / View Review</button>
+                            </form>
+                            <p class="card-text text-center">Read other users reviews of iPhone 11 or leave your own!</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- itemtwo_review -->
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                          <a href="#"><img class="card-img-top" src="static/images/Samsung-s10.png" alt="Samsung s10"></a>
+                        <div class="card-body">
+                            <h4 class="card-title text-center">
+                          <a href="https://www.amazon.com/Samsung-SM-G975F-Unlocked-Smartphone-International/dp/B07NZX5BKH/ref=sr_1_5?keywords=samsung+s10&qid=1576785407&sr=8-5" target="_blank">Samsung s10</a>
+                            </h4>
+                            <h5 class="text-center">$744</h5>
+                            <form method="POST" action="{{ url_for('itemtwo_review') }}">
+                                <button type="submit" class="btn btn-primary btn-block">Leave Review / View Review</button>
+                            </form>
+                            <p class="card-text text-center">Read other users reviews of Samsung s10 or leave your own!</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- itemthree_review -->
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                          <a href="#"><img class="card-img-top" src="static/images/Huawei-p30.png" alt="Huawei p30"></a>
+                        <div class="card-body">
+                            <h4 class="card-title text-center">
+                          <a href="https://www.amazon.com/ELE-L29-Factory-Unlocked-Smartphone-International/dp/B07Q2X19LG/ref=sr_1_2?keywords=huawei+p30&qid=1576785958&sr=8-2" target="_blank">Huawei p30</a>
+                            </h4>
+                            <h5 class="text-center">$515</h5>
+                            <form method="POST" action="{{ url_for('itemthree_review') }}">
+                                <button type="submit" class="btn btn-primary btn-block">Leave Review / View Review</button>
+                            </form>
+                            <p class="card-text text-center">Read other users reviews of Huawei p30 or leave your own!</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- itemfour_review -->
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                          <a href="#"><img class="card-img-top" src="static/images/google_pixel4.png" alt="Google Pixel 4"></a>
+                        <div class="card-body">
+                            <h4 class="card-title text-center">
+                          <a href="https://www.amazon.com/Google-Pixel-Just-Black-Unlocked/dp/B07YMNLXL3/ref=sr_1_3?keywords=google+pixel+4&qid=1576788297&sr=8-3" target="_blank">Google Pixel 4</a>
+                            </h4>
+                            <h5 class="text-center">$699</h5>
+                            <form method="POST" action="{{ url_for('itemfour_review') }}">
+                                <button type="submit" class="btn btn-primary btn-block">Leave Review / View Review</button>
+                            </form>
+                            <p class="card-text text-center">Read other users reviews of Google Pixel 4 or leave your own!</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- itemfive_review -->
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                          <a href="#"><img class="card-img-top" src="static/images/iphone_xr.png" alt="iPhone XR"></a>
+                        <div class="card-body">
+                            <h4 class="card-title text-center">
+                          <a href="https://www.amazon.com/Apple-iPhone-XR-Fully-Unlocked/dp/B07P6Y7954/ref=sr_1_5?keywords=APPLE+iPhone+8&qid=1576789272&sr=8-5" target="_blank">iPhone XR</a>
+                            </h4>
+                            <h5 class="text-center">$503</h5>
+                            <form method="POST" action="{{ url_for('itemfive_review') }}">
+                                <button type="submit" class="btn btn-primary btn-block">Leave Review / View Review</button>
+                            </form>
+                            <p class="card-text text-center">Read other users reviews of iPhone XR or leave your own!</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- itemsix_review -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                          <a href="#"><img class="card-img-top" src="static/images/NOKIA-7.png" alt="Nokia 7.2"></a>
+                        <div class="card-body">
+                            <h4 class="card-title text-center">
+                          <a href="https://www.amazon.com/Nokia-7-2-Unlocked-Smartphone-T-Mobile/dp/B07XVZXR5Y/ref=sr_1_1_sspa?crid=CKNZLAVVZBX4&keywords=nokia+7.2&qid=1576790035&sprefix=nokia%2Caps%2C286&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFERkpFSTdCTUZXMDAmZW5jcnlwdGVkSWQ9QTA0OTMwODIxMktNWDM5QjZRMzRaJmVuY3J5cHRlZEFkSWQ9QTA5MDA3MDIxUUIzTjQ1NkhFRk1KJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==" target="_blank">Nokia 7.2</a>
+                            </h4>
+                            <h5 class="text-center">$329</h5>
+                            <form method="POST" action="{{ url_for('itemsix_review') }}">
+                                <button type="submit" class="btn btn-primary btn-block">Leave Review / View Review</button>
+                            </form>
+                            <p class="card-text text-center">Read other users reviews of Nokia 7.2 or leave your own!</p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-item">
-              <h2 class="text-center"><a href="https://www.amazon.com/ELE-L29-Factory-Unlocked-Smartphone-International/dp/B07Q2X19LG/ref=sr_1_2?keywords=huawei+p30&qid=1576785958&sr=8-2" target="_blank">Huawei P30 - 128GB - Breathing Crystal</a></h2>
-              <img class="d-block img-fluid" src="static/images/Huawei-p30.png" alt="Huawei p30">
-            </div>
-            <div class="carousel-item">
-              <h2 class="text-center"><a href="https://www.amazon.com/Google-Pixel-Just-Black-Unlocked/dp/B07YMNLXL3/ref=sr_1_3?keywords=google+pixel+4&qid=1576788297&sr=8-3" target="_blank">Google Pixel 4 - 64 GB</a></h2>
-              <img class="d-block img-fluid" src="static/images/google_pixel4.png" alt="Google Pixel 4">
-            </div>
-            <div class="carousel-item">
-              <h2 class="text-center"><a href="https://www.amazon.com/Apple-iPhone-XR-Fully-Unlocked/dp/B07P6Y7954/ref=sr_1_5?keywords=APPLE+iPhone+8&qid=1576789272&sr=8-5" target="_blank">Apple iPhone XR - 64 GB</a></h2>
-              <img class="d-block img-fluid" src="static/images/iphone_xr.png" alt="iPhone XR">
-            </div>
-            <div class="carousel-item">
-              <h2 class="text-center"><a href="https://www.amazon.com/Nokia-7-2-Unlocked-Smartphone-T-Mobile/dp/B07XVZXR5Y/ref=sr_1_1_sspa?crid=CKNZLAVVZBX4&keywords=nokia+7.2&qid=1576790035&sprefix=nokia%2Caps%2C286&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFERkpFSTdCTUZXMDAmZW5jcnlwdGVkSWQ9QTA0OTMwODIxMktNWDM5QjZRMzRaJmVuY3J5cHRlZEFkSWQ9QTA5MDA3MDIxUUIzTjQ1NkhFRk1KJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==" target="_blank">Nokia 7.2 - 128 GB</a></h2>
-              <img class="d-block img-fluid" src="static/images/NOKIA-7.png" alt="Nokia 7.2">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
         </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="static/images/Iphone 11.png" alt="iPhone 11"></a>
-              <div class="card-body">
-                <h4 class="card-title text-center">
-                  <a href="https://www.amazon.com/Apple-iPhone-11-256GB-Unlocked/dp/B07ZPL6Y2D/ref=sr_1_1?keywords=iphone+11&qid=1576785760&sr=8-1" target="_blank">iPhone 11</a>
-                </h4>
-                <h5 class="text-center">$809</h5>
-                 <form method="POST" action="{{ url_for('itemone_review') }}">
-                <button type="submit" class="btn btn-primary btn-block">Leave Review / View Review</button>
-                </form>
-                <p class="card-text text-center">Read other users reviews of iPhone 11 or leave your own!</p>
-              </div>
-              <div class="card-footer text-center">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="static/images/Samsung-s10.png" alt="Samsung s10"></a>
-              <div class="card-body">
-                <h4 class="card-title text-center">
-                  <a href="https://www.amazon.com/Samsung-SM-G975F-Unlocked-Smartphone-International/dp/B07NZX5BKH/ref=sr_1_5?keywords=samsung+s10&qid=1576785407&sr=8-5" target="_blank">Samsung s10</a>
-                </h4>
-                <h5 class="text-center">$744</h5>
-                <form method="POST" action="{{ url_for('itemtwo_review') }}">
-                <button type="submit" class="btn btn-primary btn-block">Leave Review / View Review</button>
-                </form>
-                <p class="card-text text-center">Read other users reviews of Samsung s10 or leave your own!</p>
-              </div>
-              <div class="card-footer text-center">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="static/images/Huawei-p30.png" alt="Huawei p30"></a>
-              <div class="card-body">
-                <h4 class="card-title text-center">
-                  <a href="https://www.amazon.com/ELE-L29-Factory-Unlocked-Smartphone-International/dp/B07Q2X19LG/ref=sr_1_2?keywords=huawei+p30&qid=1576785958&sr=8-2" target="_blank">Huawei p30</a>
-                </h4>
-                <h5 class="text-center">$515</h5>
-                <form method="POST" action="{{ url_for('itemthree_review') }}">
-                <button type="submit" class="btn btn-primary btn-block">Leave Review / View Review</button>
-                </form>
-                <p class="card-text text-center">Read other users reviews of Huawei p30 or leave your own!</p>
-              </div>
-              <div class="card-footer text-center">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="static/images/google_pixel4.png" alt="Google Pixel 4"></a>
-              <div class="card-body">
-                <h4 class="card-title text-center">
-                  <a href="https://www.amazon.com/Google-Pixel-Just-Black-Unlocked/dp/B07YMNLXL3/ref=sr_1_3?keywords=google+pixel+4&qid=1576788297&sr=8-3" target="_blank">Google Pixel 4</a>
-                </h4>
-                <h5 class="text-center">$699</h5>
-                 <form method="POST" action="{{ url_for('itemfour_review') }}">
-                <button type="submit" class="btn btn-primary btn-block">Leave Review / View Review</button>
-                </form>
-                <p class="card-text text-center">Read other users reviews of Google Pixel 4 or leave your own!</p>
-              </div>
-              <div class="card-footer text-center">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="static/images/iphone_xr.png" alt="iPhone XR"></a>
-              <div class="card-body">
-                <h4 class="card-title text-center">
-                  <a href="https://www.amazon.com/Apple-iPhone-XR-Fully-Unlocked/dp/B07P6Y7954/ref=sr_1_5?keywords=APPLE+iPhone+8&qid=1576789272&sr=8-5" target="_blank">iPhone XR</a>
-                </h4>
-                <h5 class="text-center">$503</h5>
-                <form method="POST" action="{{ url_for('itemfive_review') }}">
-                <button type="submit" class="btn btn-primary btn-block">Leave Review / View Review</button>
-                </form>
-                <p class="card-text text-center">Read other users reviews of iPhone XR or leave your own!</p>
-              </div>
-              <div class="card-footer text-center">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="static/images/NOKIA-7.png" alt="Nokia 7.2"></a>
-              <div class="card-body">
-                <h4 class="card-title text-center">
-                  <a href="https://www.amazon.com/Nokia-7-2-Unlocked-Smartphone-T-Mobile/dp/B07XVZXR5Y/ref=sr_1_1_sspa?crid=CKNZLAVVZBX4&keywords=nokia+7.2&qid=1576790035&sprefix=nokia%2Caps%2C286&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFERkpFSTdCTUZXMDAmZW5jcnlwdGVkSWQ9QTA0OTMwODIxMktNWDM5QjZRMzRaJmVuY3J5cHRlZEFkSWQ9QTA5MDA3MDIxUUIzTjQ1NkhFRk1KJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==" target="_blank">Nokia 7.2</a>
-                </h4>
-                <h5 class="text-center">$329</h5>
-                <form method="POST" action="{{ url_for('itemsix_review') }}">
-                <button type="submit" class="btn btn-primary btn-block">Leave Review / View Review</button>
-                </form>
-                <p class="card-text text-center">Read other users reviews of Nokia 7.2 or leave your own!</p>
-              </div>
-              <div class="card-footer text-center">
-                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <!-- /.row -->
-
-      </div>
-      <!-- /.col-lg-9 -->
-
     </div>
-    <!-- /.row -->
-
-  </div>
-  <!-- /.container -->
+</div>
 
 {% endblock %}
