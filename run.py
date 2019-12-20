@@ -15,6 +15,8 @@ mongo = PyMongo(app)
 def index():
     return render_template("index.html")
 
+# Below are the six routes and submit review functionfor the six items.
+
 @app.route('/itemone_review',methods=['GET','POST'])
 def itemone_review():
     review=mongo.db.specifications.find()
@@ -90,4 +92,4 @@ def insert_nokia():
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
-            debug=True)
+            debug=False)
