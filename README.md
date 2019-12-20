@@ -37,6 +37,7 @@ Welcome to Electronic Reviews - Simple review site for users to leave and read r
 
 * Want to create an membership feature, where people can register for free/log in with an personal account where they can see the reviews they left and also be able to edit them.
 * Want to create an search bar, where users can search for different items and reviews.
+* Want to create function where users can upload themselves their phone with pictures and content.
 * Want to create Star Rating System for each user.
 * Create one database colletcion for all products.
 
